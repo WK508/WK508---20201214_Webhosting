@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+            counter-increment: LAD;
+        }
+        p::before
+        {
+            content : counter(LAD)"."
+        }
+        P::after
+        {
+            content : " - " attr(data-page) "page"
+        }
+        p::first-letter
+        {
+            font-size: 7em;
+        }
+    </style>
+</head>
+<body>
+    <h1>LA 다저스</h1>
+    <p data-page="52">탬파베이 레이스</p>
+    <p data-page="273">애틀란타 브레이브스</p>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*check박스를 체크하면, 그 바로 뒤에 있는 태그가 사라짐 */
+        input[type=checkbox]:checked+div
+        {
+            height : 300px
+        }
+        div
+        {
+            overflow:hidden;
+            width:650px;
+            height:300px;
+            -ms-transition-duration : 1s;
+            -webkit-transition-duration: 1s;
+            -moz-transition-duration: 1s;
+            transition-duration: 1s;
+        }
+    </style>
+</head>
+<body>
+    <input type = "checkbox">
+    <div>
+        <h1>니취팔로마~~~~~</h1>
+        <p>족팡매야!!!!!</p>
+    </div>
+</body>
+</html>
