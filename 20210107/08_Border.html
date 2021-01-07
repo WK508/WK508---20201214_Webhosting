@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box:first-child
+        {
+           /* 테두리를 적용하는 첫번째 방법*/
+           border: thick dashed cyan;
+           border-radius : 50px 40px 20px 10px;
+
+        }
+
+        .box:last-child
+        {  
+           /* 테두리를 적용하는 두번째 방법*/
+           border-width: thick;
+           border-style: dashed;
+           border-color: orangered;
+        }
+        .box:nth-child(2)
+        {
+            border-left: solid salmon 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h1>이미 늦었음.</h1>
+    </div>
+    <div class="box">
+        <h1>이미 늦었음.</h1>
+    </div>
+    <div class="box">
+        <h1>이미 늦었음.</h1>
+    </div>
+</body>
+</html>

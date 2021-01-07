@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    /* box position이 absolute일 때, body>div에 height 값을 지정해야 한다. */
+    <style>
+    .box
+    {
+        width : 100px;
+        height : 100px;
+        position : absolute;
+        
+    }
+    .red
+    {
+        background-color: red;
+        left : 10px;
+        top : 10px;
+        
+        /* static = 기본값 */
+        /* position: static; */
+    }
+    .green
+    {
+        left : 50px;
+        top : 50px;
+        background-color: green;
+    
+    }
+    .blue
+    {
+        background-color: blue;
+        left : 90px;
+        top : 90px;
+        
+    }
+    body>div
+    {
+        width : 400px;
+        height : 100px;
+        border : 3px solid black
+    }
+</style>
+</head>
+<body>
+    <h1>조온마난색기</h1>
+    <div>
+    <div class = "box red"></div>
+    <div class = "box green"></div>
+    <div class = "box blue"></div>
+    <h1>시발노무색기</h1> 
+    </div>
+</body>
+</html>
+    
+    
+
