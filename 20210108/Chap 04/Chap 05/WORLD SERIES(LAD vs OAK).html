@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href = "https://unpkg.com/ress/dist/ress.min.css">
+
+    <style>
+       * { margin : 0; padding : 0;}
+       body { font-family: sans-serif;}
+       li { list-style : none;}
+       a { text-decoration: none;}
+       img { border : 0;}
+
+       #main_header
+       {
+           width : 960px;
+           margin : 0 auto;
+           height : 160px;
+           position: relative;
+       }
+
+       #main_header > #title
+       {
+           position : absolute;
+           left : 20px;
+           top : 30px;
+       }
+
+       #main_header > #main_gnb
+       {
+           position : absolute;
+           right : 0;
+           top : 0;
+       }
+
+       #main_header > #main_lnb
+       {
+         position : absolute;
+         right : 0;
+         bottom : 10px;
+       }
+       #title
+       {
+        font-family: 'Bebas Neue', cursive;
+        color : white;
+        background: blue;
+       }
+
+       #main_gnb > ul {overflow: hidden;}
+       #main_gnb > ul > li {float : left;}
+       #main_gnb > ul  > li > a {
+           display: block;
+           padding: 2px 10px;
+           border : 2px solid green;
+       }
+       #main_gnb > ul  > li > a:hover {
+           background : blue;
+           color : white;
+       }
+       #main_gnb > ul  > li:first-child > a {border-radius : 10px 0 0 10px;}
+       #main_gnb > ul  > li:last-child > a {border-radius : 0 10px 10px 0;}
+
+
+       #main_lnb > ul {overflow: hidden;}
+       #main_lnb > ul > li {float : left;}
+       #main_lnb > ul  > li > a {
+           display: block;
+           padding: 10px 20px;
+           border : 2px solid green;
+       }
+       #main_lnb > ul  > li > a:hover {
+           background : blue;
+           color : white;
+       }
+       #main_lnb > ul  > li:first-child > a {border-radius : 10px 0 0 10px;}
+       #main_lnb > ul  > li:last-child > a {border-radius : 0 10px 10px 0;}
+
+       #content
+       {
+           width : 960px;
+           margin : 0 auto;
+           overflow: hidden;
+       }
+
+       #content > #main_section
+       {
+           width : 750px;
+           float : left;
+           
+       }
+       #content > #main_aside
+       {
+           width : 200px;
+           float : right;
+           background: black;
+       }
+       #main_section > article.main_article
+       {
+           margin-bottom: 10px;
+           padding : 20px;
+           border : 2px solid orangered;
+           color : white;
+           background: blue; 
+       }
+       #main_section > article.main_article1 
+       {
+           margin-bottom: 10px;
+           padding : 20px;
+           border : 2px solid orangered;
+           color : white;
+           background: blue;
+       }
+       #main_section > article.main_article2
+       {
+           margin-bottom: 10px;
+           padding : 20px;
+           border : 2px solid orangered;
+           color : yellow;
+           background: green;
+       }
+
+       input:nth-of-type(1) {display : none;}
+       input:nth-of-type(1) ~ div:nth-of-type(1) {display : none;}
+       input:nth-of-type(1):checked ~ div:nth-of-type(1) {display : block;}
+
+       input:nth-of-type(2) {display : none;}
+       input:nth-of-type(2) ~ div:nth-of-type(2) {display : none;}
+       input:nth-of-type(2):checked ~ div:nth-of-type(2) {display : block;}
+
+       section.buttons{overflow: hidden;}
+       section.buttons > label {
+           display : block;
+           float : left;
+           width : 100px;
+           height : 30px;
+           line-height: 30px;
+           text-align: center;
+           box-sizing: border-box;
+           border : 2px solid orangered;
+           background: black;
+           color : white;
+       }
+       input:nth-of-type(1):checked~section.buttons>label:nth-of-type(1)
+       {
+           color : white;
+           background: blue;
+       }
+       input:nth-of-type(2):checked~section.buttons>label:nth-of-type(2)
+       {
+           color : yellow;
+           background: green;
+       }
+
+       .item
+       {
+           overflow: hidden;
+           padding : 10px;
+           border : 2px solid orangered;
+           border-top: none;
+       }
+       .thumbnail
+       {
+           float : left;
+       }
+       .description1
+       {
+           float : left;
+           margin-left : 10px;
+           color : white;
+           background: blue;
+       }
+       .description2
+       {
+           float : left;
+           margin-left : 10px;
+           color : yellow;
+           background: green;
+       }
+       .description > strong
+       {
+           display : block;
+           width : 120px;
+           white-space : nowrap;
+           overflow : hidden;
+           text-overflow : ellipsis;
+       }
+       #main_footer
+       {
+           width : 960px;
+           margin : 0 auto;
+           margin-bottom : 10px;
+           box-sizing:border-box;
+           padding : 10px;
+           border:2px solid orangered;
+           text-align:center;
+           color : white;
+           background: blue;
+       }
+       body
+       {
+           background-image: url('BackgroundFront.png'), url('BackgroundBack.png');
+           background-size: 380%;
+           background-repeat: no-repeat;
+       }
+    </style>
+</head>
+<body>
+    
+    <header id = "main_header">
+        <div id = "title">
+            <h1>1988 WORLD SERIES</h1>
+            <h1>LA DODGERS - OAKLAND ATHLETICS</h1>
+        </div>
+        <nav id = "main_gnb">
+            <ul>
+                <li><a href="https://ko.wikipedia.org/wiki/1988%EB%85%84_%EC%9B%94%EB%93%9C_%EC%8B%9C%EB%A6%AC%EC%A6%88">1차전</a></li>
+                <li><a href="https://ko.wikipedia.org/wiki/1988%EB%85%84_%EC%9B%94%EB%93%9C_%EC%8B%9C%EB%A6%AC%EC%A6%88">2차전</a></li>
+                <li><a href="https://ko.wikipedia.org/wiki/1988%EB%85%84_%EC%9B%94%EB%93%9C_%EC%8B%9C%EB%A6%AC%EC%A6%88">3차전</a></li>
+                <li><a href="https://ko.wikipedia.org/wiki/1988%EB%85%84_%EC%9B%94%EB%93%9C_%EC%8B%9C%EB%A6%AC%EC%A6%88">4차전</a></li>
+                <li><a href="https://ko.wikipedia.org/wiki/1988%EB%85%84_%EC%9B%94%EB%93%9C_%EC%8B%9C%EB%A6%AC%EC%A6%88">5차전</a></li>
+            </ul>
+        </nav>
+        <nav id = "main_lnb">
+            <ul>
+                <li><a href="https://www.youtube.com/watch?v=N4nwMDZYXTI">홈런</a></li>
+                <li><a href="https://namu.wiki/w/%EC%98%A4%EB%A0%90%20%ED%97%88%EC%83%A4%EC%9D%B4%EC%A0%80">MVP</a></li>
+                <li><a href="https://namu.wiki/w/%ED%86%A0%EB%AF%B8%20%EB%9D%BC%EC%86%8C%EB%8B%A4">감독</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id = "content">
+        <section id = "main_section">
+            <article class = "main_article">
+                <h1>1988 WORLD SERIES</h1>
+                <p>1988 내셔널리그 우승팀인 LA 다저스와 1988 아메리칸리그 우승팀인 오클랜드 어슬레틱스가 7전 4선승제로 맞붙은 메이저리그 베이스볼 최종 결승전</p>
+            </article>
+            <article class = "main_article1">
+                <h1><a href = "https://namu.wiki/w/%EB%A1%9C%EC%8A%A4%EC%95%A4%EC%A0%A4%EB%A0%88%EC%8A%A4%20%EB%8B%A4%EC%A0%80%EC%8A%A4">LA DODGERS (NL PENNANT)</a></h1>
+                <p>1988 내셔널리그 챔피언십 시리즈에서 뉴욕 메츠를 4승 3패로 꺾고 월드시리즈에 진출하였습니다.</p>
+            </article>
+            <article class = "main_article2">
+                <h1><a href = "https://namu.wiki/w/%EC%98%A4%ED%81%B4%EB%9E%9C%EB%93%9C%20%EC%95%A0%EC%8A%AC%EB%A0%88%ED%8B%B1%EC%8A%A4">OAKLAND ATHLETICS (AL PENNANT)</a></h1>
+                <p>1988 아메리칸리그 챔피언십 시리즈에서 보스턴 레드삭스를 4승 무패로 꺾고 월드시리즈에 진출하였습니다.</p>
+            </article>
+        </section>
+        <aside id = "main_aside">
+            <input type="radio" name="tab" id="LAD" checked >
+            <input type="radio" name="tab" id="OAK" >
+            <section class = "buttons">
+               <label for="LAD">LAD</label>
+               <label for="OAK">OAK</label>
+            </section>
+             <div class = "tab_item">
+                 <ul>
+                     <li class = "item"><a href = "#">
+                             <div class = "thumbnail">
+                                 <img src = "icons8_shutdown_48px.png">
+                             </div>
+                             <div class = "description1">
+                                 <strong><a href="https://www.youtube.com/watch?v=rYkW3w57XSg">1차전</a></strong>
+                                 <p>LAD 5 - 4 OAK</p>
+                             </div>
+                            </a>
+                        </li>
+                     <li class="item"><a href = "#">
+                             <div class = "thumbnail">
+                                <img src = "icons8_shutdown_48px.png">
+                             </div>
+                             <div class = "description1">
+                                 <strong><a href = "https://www.youtube.com/watch?v=R2G4peBe9Lw">2차전</a></strong>
+                                 <p>LAD 6 - 0 OAK</p>
+                             </div>
+                            </a>
+                        </li>
+                     <li class = "item"><a href = "#">
+                             <div class = "thumbnail">
+                                 <img src = "icons8_shutdown_48px.png">
+                             </div>
+                             <div class = "description1">
+                                 <strong><a href = "https://www.youtube.com/watch?v=KSaipfWvYXA">4차전</a></strong>
+                                 <p>LAD 4 - 3 OAK</p>
+                             </div>
+                            </a>
+                        </li>
+                     <li class = "item"><a href = "#">
+                             <div class="thumbnail">
+                                 <img src="icons8_shutdown_48px.png">
+                             </div>
+                             <div class="description1">
+                                 <strong><a href="https://www.youtube.com/watch?v=jooLlfORmtM">5차전</a></strong>
+                                 <p>LAD 5 - 2 OAK</p>
+                             </div>
+                            </a></li>
+                 </ul>
+             </div>
+             <div class = "tab_item">
+                 <ul>
+                     <li class = "item"><a href = "#">
+                             <div class = "thumbnail">
+                                 <img src = "icons8_shutdown_48px.png">
+                             </div>
+                             <div class = "description2">
+                                 <strong><a href = "https://www.youtube.com/watch?v=HuLCite-11Q">3차전</a></strong>
+                                 <p>OAK 2 - 1 LAD</p>
+                             </div>
+                            </a>
+                        </li>
+                    </ul>
+             </div>
+             </aside>
+             </div>
+             <br>
+    <footer id = "main_footer">
+        <h2><a href = "https://namu.wiki/w/1988%EB%85%84%20%EC%9B%94%EB%93%9C%20%EC%8B%9C%EB%A6%AC%EC%A6%88">1988 WORLD SERIES</a></h2>
+        <address>LA 다저스가 오클랜드 어슬레틱스를 4승 1패로 꺾고 팀 통산 6번째 월드시리즈 우승을 차지하였습니다.</address>
+    </footer>
+</body>
+</html>

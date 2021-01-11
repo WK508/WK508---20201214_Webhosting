@@ -97,7 +97,7 @@
         {
             width:200px;
             float:right;
-            background-color: orangered;
+            background-color: red;
         }
 
         /* 본문 */
@@ -139,6 +139,46 @@
             color: blue;
         }
 
+        .item
+        {
+            overflow : hidden;
+            padding : 10px;
+            border : 1px solid black;
+            border-top : none;
+        }
+
+        .thumbnail
+        {
+            float : left;
+        }
+
+        .description
+        {
+            float : left;
+            margin-left : 10px;
+        }
+        .description > strong
+        {
+            display : block;
+            width : 120px;
+            white-space : nowrap;
+            overflow : hidden;
+            text-overflow: ellipsis;
+        }
+
+        #main_footer
+        {
+            width: 960px;
+            margin: 0 auto;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+            padding : 10px;
+            border : 3px solid green;
+            text-align : center;
+            color : white;
+            background: red;
+        }
+
     </style>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Yeon+Sung&display=swap" rel="stylesheet">
@@ -147,41 +187,41 @@
 <body>
     <header id = "main_header">
         <div id="title">
-            <h1>조온마 난색기</h1>
-            <h1>시발노 무색기</h1>
+            <h1>조온마 난색기 (욕 아님)</h1>
+            <h1>시발노 무색기 (욕 아님)</h1>
         </div>
         <nav id = "main_gnb">
             <ul>
                 <!--(li>a[href=#])*4-->
-                <li><a href="#">one</a></li>
-                <li><a href="#">two</a></li>
-                <li><a href="#">three</a></li>
-                <li><a href="#">four</a></li>
+                <li><a href="#">GAME 1</a></li>
+                <li><a href="#">GAME 2</a></li>
+                <li><a href="#">GAME 3</a></li>
+                <li><a href="#">GAME 4</a></li>
             </ul>
         </nav>
         <nav id = "main_lnb">
             <ul>
-                <li><a href="#">일</a></li>
-                <li><a href="#">이</a></li>
-                <li><a href="#">삼</a></li>
-                <li><a href="#">사</a></li>
+                <li><a href="#">1차전</a></li>
+                <li><a href="#">2차전</a></li>
+                <li><a href="#">3차전</a></li>
+                <li><a href="#">4차전</a></li>
             </ul> 
         </nav>
     </header>
     <div id="content">
        <section id = "main_section">
            <article class="main_article">
-               <h1>족팡매야</h1>
+               <h1>족팡매야 (욕 아님)</h1>
                <p>!!!!!!</p>
            </article>
 
            <article class="main_article">
-            <h1>니취팔러마</h1>
+            <h1>니취팔러마 (욕 아님)</h1>
             <p>!!!!!!!!!!</p>
            </article>
 
            <article class="main_article">
-            <h1>시발노 무색기</h1>
+            <h1>시발노 무색기 (욕 아님)</h1>
             <p>!!!!!!!!!</p>
            </article>
        </section>
@@ -189,27 +229,117 @@
             <input type="radio" name="tab" id="first" checked>
             <input type="radio" name="tab" id="second">
             <section class = "buttons">
-                <label for="first">First</label>
-                <label for="second">Second</label>
+                <label for="first">WSH</label>
+                <label for="second">HOU</label>
             </section>
             <div class = "tab_item">
                 <ul>
-                    <li><a href="#">01</a></li>
-                    <li><a href="#">02</a></li>
-                    <li><a href="#">03</a></li>
-                    <li><a href="#">04</a></li>
+                    <li class = "item">
+                        <a href="#">
+                           <div class = "thumbnail">
+                               <img src = "icons8_shutdown_48px.png">
+                           </div>
+                           <div class = "description">
+                               <strong>워싱턴 승(5 : 4)</strong>
+                               <p>2019-10-23</p>
+                           </div>
+                        </a>
+                    </li>
+                    <li class = "item">
+                        <a href="#">
+                            <a href="#">
+                                <div class = "thumbnail">
+                                    <img src = "icons8_shutdown_48px.png">
+                                </div>
+                                <div class = "description">
+                                    <strong>워싱턴 승(12 : 3)</strong>
+                                    <p>2019-10-24</p>
+                                </div>
+                             </a>
+                            </a>
+                        </li> 
+                    <li class = "item">
+                        <a href="#">
+                            <a href="#">
+                                <div class = "thumbnail">
+                                    <img src = "icons8_shutdown_48px.png">
+                                </div>
+                                <div class = "description">
+                                    <strong>휴스턴 승 (4 : 1)</strong>
+                                    <p>2019-10-26</p>
+                                </div>
+                             </a>
+                        </a>
+                    </li>
+                    <li class = "item">
+                        <a href="#">
+                            <a href="#">
+                                <div class = "thumbnail">
+                                    <img src = "icons8_shutdown_48px.png">
+                                </div>
+                                <div class = "description">
+                                    <strong>휴스턴 승 (8 : 1)</strong>
+                                    <p>2019-10-27</p>
+                                </div>
+                             </a>
+                        </a>
+                    </li>
                 </ul>
             </div>
             <div class = "tab_item">
                 <ul>
-                    <li><a href="#">1</a></li>
-                    <li><a href="#">2</a></li>
-                    <li><a href="#">3</a></li>
-                    <li><a href="#">4</a></li>
+                    <li class = "item">
+                        <a href="#">
+                            <div class = "thumbnail">
+                                <img src = "icons8_shutdown_48px.png">
+                            </div>
+                            <div class = "description">
+                                <strong>휴스턴 승 (7 : 1)</strong>
+                                <p>2019-10-28</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li  class = "item">
+                        <a href="#">
+                            <div class = "thumbnail">
+                                <img src = "icons8_shutdown_48px.png">
+                            </div>
+                            <div class = "description">
+                                <strong>워싱턴 승 (7 : 2)</strong>
+                                <p>2019-10-30</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li  class = "item">
+                        <a href="#">
+                            <div class = "thumbnail">
+                                <img src = "icons8_shutdown_48px.png">
+                            </div>
+                            <div class = "description">
+                                <strong>워싱턴 승 (6 : 2)</strong>
+                                <p>2019-10-31</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li  class = "item">
+                        <a href="#">
+                            <div class = "thumbnail">
+                                <img src = "icons8_shutdown_48px.png">
+                            </div>
+                            <div class = "description">
+                                <strong>2019 월드시리즈 워싱턴 내셔널스 우승</strong>
+                                <p>2019-10-31</p>
+                            </div>
+                        </a>
+                    </li>
                 </ul>  
             </div>
        </aside>
     </div>
-    <footer></footer>
+    <br>
+    <footer id = "main_footer">
+        <h1>워싱턴 내셔널스 VS 휴스턴 애스트르스</h1>
+        <address>워싱턴 내셔널스가 휴스턴 애스트로스를 4승 3패로 꺾고 창단 50년 만에 첫 월드시리즈 우승을 차지하였습니다.</address>
+    </footer>
 </body>
 </html>
