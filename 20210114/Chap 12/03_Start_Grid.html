@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container
+        {
+            display : grid;
+            grid-template-columns: 200px 200px 200px; /* 2 대 8 */
+            grid-template-rows: 200px 200px 200px; /* 위쪽은 500, 아래는 1000 */
+            gap : 10px
+        }
+
+        .container>div
+        {
+            background-color: green;
+            color : cyan;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+           <h1>header</h1>
+           
+        </div>
+        <div class="aside">
+            <h1>aside</h1>
+            
+        </div>
+        <div class="section">
+            <h1>section</h1>
+            
+        </div>
+        <div class="footer">
+            <h1>footer</h1>
+           
+        </div>
+    </div>
+</body>
+</html>
