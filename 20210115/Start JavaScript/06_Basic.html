@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var one = 1;
+        var two = "2";
+        let three = 3;
+        var one = 111;
+        //alert("ㄷㄷㄷ");
+        console.log("ㄷㄷㄷ");
+
+        // let three = 333;
+        //alert("ㄷㄷㄷ111");
+        console.log("ㄷㄷㄷ111");
+
+        var array = [1, 2, 3, "헐", '니취팔러마', '케시키', 5];
+        for (var i = 0; i < array.length; i++)
+        {
+            //alert(array[i]);
+            console.log(array[i]);
+        }
+
+        array = 100;
+        //alert(array);
+        console.log(array);
+
+        var obj = {
+                    name : "무키 베츠",
+                    age : 30,
+                    manager : "데이브 로버츠",
+                    _ : "언더바는 허용됨",
+                  }
+
+       // alert(obj['name']);
+       // alert(obj['age']);
+       // alert(obj['manager']);
+       // alert(obj.name);
+       // alert(obj.age);
+       // alert(obj.manager);
+        console.log(obj['name']);
+        console.log(obj['age']);
+        console.log(obj['manager']);
+        console.log(obj.name);
+        console.log(obj.age);
+        console.log(obj.manager);
+        // console.log(obj.123);
+
+        console.log("아놔~~~~~~~~~~~~~~~~~");
+        var wow = function()
+        {
+           // alert("하이브리드 샘이솟아 리오레이비");
+            console.log("미춰버리겠네~~~~~~~");
+        };
+
+        // function wow() ;
+        //{
+          //console.log("미춰버리겠네~~~~~~~");
+       //}
+        wow();
+
+        console.log(wow);
+        /*
+        ƒ ()
+        {
+           // alert("하이브리드 샘이솟아 리오레이비");
+            console.log("미춰버리겠네~~~~~~~");
+        }
+        */
+        console.log("!!!!!!!!!!");
+        console.log(wow()); // 이건 undefined가 뜸 // 
+        console.log("!!!!!!!!!!");
+
+        console.log("!!!!!!!!");
+        wow = function () {
+            return "스바시바";
+        }
+        console.log(wow());
+
+       // wow();
+       // wow();
+
+       var devilArray = 
+       [
+           1,2,"3", {master : "아무개", name : "아무개"}, [1,2,3]
+               
+           
+    ]
+    console.log(devilArray[0]);
+    console.log(devilArray[1]);
+    console.log(devilArray[2]);
+    console.log(devilArray[3]);
+    console.log(devilArray[4]);
+
+    var devilJson = 
+    {
+        one : [1,2,3,4,5],
+        two : {two_one : "2", two_two : "twotwo"},
+        three : 5
+    }
+    console.log(devilJson['one']);
+    console.log(devilJson.two);
+    console.log(devilJson.three);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
