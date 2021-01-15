@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--naming--> 
+    <style>
+        .container
+        {
+            width : 960px;
+            margin : 0 auto;
+            
+
+            display : grid;
+            grid-template-columns: 2fr 8fr;
+            gap : 10px;
+            grid-template-areas: 'header header' 
+                                 'aside section' 
+                                 'footer footer';
+        }
+        .container>div
+        {
+            background-color: cyan;
+
+        }
+
+        
+        
+        .header { grid-area : header;}
+        .aside { grid-area : aside;}
+        .section { grid-area : section;}
+        .footer { grid-area : footer;}
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>족팡매야</h1>
+            <p>포기는 배추를 셀 때에만 쓰는 말이 아니다.</p>
+        </div>
+        <div class="aside">
+            <h1>족팡매야</h1>
+            <p>포기는 배추를 셀 때에만 쓰는 말이 아니다.</p>
+        </div>
+        <div class="section">
+            <h1>족팡매야</h1>
+            <p>포기는 배추를 셀 때에만 쓰는 말이 아니다.</p>
+        </div>
+        <div class="footer">
+            <h1>족팡매야</h1>
+            <p>포기는 배추를 셀 때에만 쓰는 말이 아니다.</p>
+        </div>
+    </div>
+</body>
+</html>
