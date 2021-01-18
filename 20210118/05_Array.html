@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        // 객체 빼먹은 거 보충
+        function Student(name, number) {
+            this.name = name;
+            this.number = number;
+        }
+
+        // 클래스, 메소드와 같은 역할(한번 선언하면 계속 쓴다.)
+        Student.prototype.toString = function()
+        {
+            return "이름 : " + this.name + ", 학번 : " + this.number;
+        }
+
+        // 배열 빼먹은 거 보충
+        var array = [];
+
+        array.push(new Student("아무개", 20202020));
+        array.push(new Student("모른다", 21212121));
+        var tempStudent = new Student("얼렁뚱땅", 22222222);
+        array.push(tempStudent);
+
+        var output = '';
+        for (var index in array)
+        {
+            output += array[index] + "\n";
+        }
+        alert(output);
+
+        // var a = 12+12; (값 연산, 12 + 12 = 24)
+        // var b = 12 + "12";(이어붙이기 연산, 12 + "12" = 1212)
+    </script>
+</body>
+</html>
