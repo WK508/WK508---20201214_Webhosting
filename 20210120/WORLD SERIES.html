@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Coda+Caption:wght@800&display=swap" rel="stylesheet">
+
+    <style>
+        *
+        {
+            margin : 0;
+            padding : 0;
+        }
+
+        body
+        {
+            font-family : 'Coda Caption', sans-serif;
+        }
+
+        li
+        {
+            list-style : none;
+        }
+
+        a
+        {
+            text-decoration: none;
+        }
+
+        img
+        {
+            border : 0;
+        }
+
+        #main_header
+        {
+            width : 960px;
+            margin : 0 auto;
+            height : 160px;
+            position: relative;
+           
+        }
+
+        #main_header > #title
+        {
+            position : absolute;
+            left : 20px;
+            top : 30px;
+            background: blue;
+            color : darkgray;
+        }
+
+        #main_header > #main_gnb
+        {
+            position : absolute;
+            right : 0;
+            top : 0;
+        }
+
+        #main_header > #main_lnb
+        {
+            position : absolute;
+            right : 0;
+            bottom : 10px;
+        }
+
+        #title
+        {
+            font-family: 'Coda Caption', sans-serif;
+        }
+
+        #main_gnb > ul
+        {
+            overflow : hidden;
+        }
+
+        #main_gnb > ul > li
+        {
+            float : left;
+        }
+
+        #main_gnb > ul > li > a
+        {
+            display : block;
+            padding : 2px 10px;
+            border : 1px solid black;
+        }
+
+        #main_gnb > ul > li > a:hover
+        {
+            background : blue;
+            color :  darkgray;
+            
+            
+        }
+
+        #main_gnb > ul > li:first-child > a
+        {
+            border-radius: 10px 0 0 10px;
+        }
+
+        #main_gnb > ul > li:last-child > a
+        {
+            border-radius: 0 10px 10px 0;
+        }
+
+        #main_lnb > ul
+        {
+            overflow : hidden;
+        }
+
+        #main_lnb > ul > li
+        {
+            float : left;
+        }
+
+        #main_lnb > ul > li > a
+        {
+            display : block;
+            padding : 2px 10px;
+            border : 1px solid black;
+            
+        }
+
+        #main_lnb > ul > li > a:hover
+        {
+            background: blue;
+            color : darkgray;
+            
+        }
+
+        #main_lnb > ul > li:first-child > a
+        {
+            border-radius: 10px 0 0 10px;
+        }
+
+        #main_lnb > ul > li:last-child > a
+        {
+            border-radius: 0 10px 10px 0;
+        }
+
+        #content
+        {
+            width : 960px;
+            margin : 0 auto;
+            overflow: hidden;
+        }
+
+        #content > #main_section
+        {
+            width : 750px;
+            float : left;
+        }
+
+        #content > #main_aside 
+        {
+            width : 200px;
+            float : right; 
+           
+        }
+
+        #main_section > article.main_article1
+        {
+            margin-bottom: 10px;
+            padding : 20px;
+            border : 1px solid black;
+            background: blue;
+            color : darkgray;
+        }
+
+        #main_section > article.main_article2
+        {
+            margin-bottom: 10px;
+            padding : 20px;
+            border : 1px solid black;
+            background: navy;
+            color : lightblue;
+        }
+
+        #main_section > article.main_article3
+        {
+            margin-bottom: 10px;
+            padding : 20px;
+            border : 1px solid black;
+            background: green;
+            color : white;
+        }
+
+        input:nth-of-type(1) { display : none; }
+        input:nth-of-type(1) ~ div:nth-of-type(1) { display : none; }
+        input:nth-of-type(1):checked ~ div:nth-of-type(1) { display : block; }
+
+        input:nth-of-type(2) { display : none; }
+        input:nth-of-type(2) ~ div:nth-of-type(2) { display : none; }
+        input:nth-of-type(2):checked ~ div:nth-of-type(2) { display : block; }
+
+        section.buttons {overflow: hidden;}
+
+        section.buttons > label
+        {
+            display : block;
+            float : left;
+            width : 100px;
+            height : 30px;
+            line-height : 30px;
+            text-align : center;
+            box-sizing: border-box;
+            border : 1px solid black;
+            background: green;
+            color : white;
+        }
+
+        input:nth-of-type(1):checked ~ section.buttons > label:nth-of-type(1)
+        {
+            background: blue;
+            color : darkgray;
+        }
+
+        input:nth-of-type(2):checked ~ section.buttons > label:nth-of-type(2)
+        {
+            background: navy;
+            color : lightblue;
+        }
+
+        .item
+        {
+            overflow : hidden;
+            padding : 10px;
+            border : 1px solid black;
+            border-top: none;
+            background: green;
+            color : white;
+            
+        }
+
+        
+        .thumbnail
+        {
+            float : left;
+        }
+
+        .description1
+        {
+            float : left;
+            margin-left : 10px;
+            background: blue;
+            color : darkgray;
+            
+        }
+
+
+        .description2
+        {
+            float : left;
+            margin-left : 10px;
+            background: navy;
+            color : lightblue;
+            
+        }
+
+        .description > strong
+        {
+            display : block;
+            width : 120px;
+            white-space : nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        #main_footer
+        {
+            width : 960px;
+            margin : 0 auto;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+            padding : 10px;
+            border : 1px solid black;
+            text-align : center;
+            background: blue;
+            color : darkgray;
+        }
+    </style>
+</head>
+<body>
+    <header id = "main_header">
+        <div id = "title">
+            <h1>2020 월드시리즈</h1>
+            <h2>LA 다저스 VS 탬파베이 레이스</h2>
+    </div>
+    <br>
+    <nav id = "main_gnb">
+        <ul>
+            <li><a href="#">GAME 1</a></li>
+            <li><a href="#">GAME 2</a></li>
+            <li><a href="#">GAME 3</a></li>
+            <li><a href="#">GAME 4</a></li>
+            <li><a href="#">GAME 5</a></li>
+            <li><a href="#">GAME 6</a></li>
+        </ul>
+    </nav>
+    <nav id = "main_lnb">
+        <ul>
+            <li><a href="#">로스앤젤레스 다저스타디움</a></li>
+            <li><a href="#">세인트피터스버그 트로피카나필드</a></li>
+        </ul>
+    </nav>
+</header>
+
+    <div id = "content">
+        <section id = "main_section">
+            <article class="main_article1">
+                <h1>LA 다저스(LAD)</h1>
+                <h1>LA 다저스는 2020 내셔널리그 챔피언십 시리즈에서 애틀란타 브레이브스를 4승 3패로 꺾고 2020 월드시리즈에 진출하였음.</h1>
+            </article>
+
+            <article class="main_article2">
+                <h1>탬파베이 레이스(TB)</h1>
+                <h1>탬파베이 레이스는 2020 아메리칸리그 챔피언십 시리즈에서 휴스턴 애스트로스를 4승 3패로 꺾고 2020 월드시리즈에 진출하였음.</h1>
+            </article>
+
+            <article class="main_article3">
+                <h1>2020 월드시리즈</h1>
+                <h1>내셔널리그 챔피언인 LA 다저스와 아메리칸리그 챔피언인 탬파베이 레이스가 2020년 10월 21일 부터 2020년 10월 28일 까지 7전 4선승제로 맞붙은 시리즈이다.</h1>
+            </article>
+        </section>
+
+    <aside id = "main_aside">
+        <input type="radio" id = "LAD" name = "tab" checked="checked" />
+        <input type="radio" id = "TB" name = "tab" />
+        <section class = "buttons">
+            <label for="LAD">LAD</label>
+            <label for="TB">TB</label>
+        </section>
+
+        <div class = "tab_item">
+        <ul>
+            <li class = "item"><a href = "#">
+                <div class = "thumbnail">
+                    <img src = "icons8_shutdown_48px.png">
+                    </div>
+                    <div class = "description1">
+                        <strong>GAME 1</strong>
+                        <p>LAD 8 - 3 TB</p>
+                        </div>
+                        </a></li>
+        
+             <li class = "item"><a href = "#">
+             <div class = "thumbnail">
+              <img src = "icons8_shutdown_48px.png">
+             </div>
+             <div class = "description1">
+            <strong>GAME 3</strong>
+              <p>LAD 6 - 2 TB</p>
+              </div>
+             </a></li>
+        
+             <li class = "item"><a href = "#">
+             <div class = "thumbnail">
+             <img src = "icons8_shutdown_48px.png">
+             </div>
+             <div class = "description1">
+             <strong>GAME 5</strong>
+             <p>LAD 4 - 2 TB</p>
+             </div>
+             </a></li>
+        
+             <li class = "item"><a href = "#">
+             <div class = "thumbnail">
+            <img src = "icons8_shutdown_48px.png">
+             </div>
+            <div class = "description1">
+             <strong>GAME 6</strong>
+             <p>LAD 3 - 1 TB</p>
+            </div>
+        </a></li>
+    </ul>
+</div>
+
+
+<div class = "tab_item">
+    <ul>
+        <li class = "item"><a href = "#">
+            <div class = "thumbnail">
+                <img src = "icons8_shutdown_48px.png">
+                </div>
+                <div class = "description2">
+                    <strong>GAME 2</strong>
+                    <p>TB 6 - 4 LAD</p>
+                    </div>
+                    </a></li>
+                    
+            <li class = "item"><a href = "#">
+             <div class = "thumbnail">
+            <img src = "icons8_shutdown_48px.png">
+                </div>
+            <div class = "description2">
+            <strong>GAME 4</strong>
+            <p>TB 8 - 7 LAD</p>
+            </div>
+         </a></li>
+        </ul>
+        </div>
+        </aside>
+        </div>
+        <br>
+    <footer id = "main_footer">
+        <h2>LA DODGERS vs TAMPA BAY RAYS</h2>
+        <address>LA 다저스가 탬파베이 레이스를 4승 2패로 꺾고 2020 월드시리즈 우승 차지.</address>
+    </footer>
+</body>
+</html>
