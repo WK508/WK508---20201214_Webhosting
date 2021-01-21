@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <style>
+        .colorText
+        {
+            color : cyan;
+        }
+
+        .border
+        {
+            border : 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1 id = "firstTag">망했다.</h1>
+    <h2 id = "secondTag">Lorem, ipsum dolor.</h2>
+
+    <script>
+        //DOM객체 이용하기(자바스크립트 이용하기)
+        var firstTag = document.querySelector('#firstTag');
+        firstTag.setAttribute('class', 'colorText border');
+
+        var firstTag2 = document.getElementById('firstTag');
+        firstTag.style.background = 'green';
+
+        // jQuery 이용
+        // $ = documents
+        // 메소드 체이닝이 잘 되어 있음
+        $('#secondTag').addClass('colorText').css('background', 'green').addClass('border');
+    </script>
+</body>
+</html>
