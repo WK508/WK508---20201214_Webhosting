@@ -113,7 +113,6 @@ namespace WindowsFormsApp2
             {
                 int a1 = Convert.ToInt32(str[0]);
                 int a2 = Convert.ToInt32(str[1]);
-                int a2 = Convert.ToInt32(str[1]);
                 int result = a1 + a2;
                 textBox1.Text = "" + result;
                // textBox1.Text = String.Format("%d", result);
