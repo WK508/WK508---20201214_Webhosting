@@ -1,0 +1,10 @@
+D:\210201 ~ 210205\WK508---20201214_Webhosting\20210201\0201\0201\bin\Debug\0201.exe.config
+D:\210201 ~ 210205\WK508---20201214_Webhosting\20210201\0201\0201\bin\Debug\0201.exe
+D:\210201 ~ 210205\WK508---20201214_Webhosting\20210201\0201\0201\bin\Debug\0201.pdb
+D:\210201 ~ 210205\WK508---20201214_Webhosting\20210201\0201\0201\obj\Debug\0201.csprojAssemblyReference.cache
+D:\210201 ~ 210205\WK508---20201214_Webhosting\20210201\0201\0201\obj\Debug\_0201.Form1.resources
+D:\210201 ~ 210205\WK508---20201214_Webhosting\20210201\0201\0201\obj\Debug\_0201.Properties.Resources.resources
+D:\210201 ~ 210205\WK508---20201214_Webhosting\20210201\0201\0201\obj\Debug\0201.csproj.GenerateResource.cache
+D:\210201 ~ 210205\WK508---20201214_Webhosting\20210201\0201\0201\obj\Debug\0201.csproj.CoreCompileInputs.cache
+D:\210201 ~ 210205\WK508---20201214_Webhosting\20210201\0201\0201\obj\Debug\0201.exe
+D:\210201 ~ 210205\WK508---20201214_Webhosting\20210201\0201\0201\obj\Debug\0201.pdb
