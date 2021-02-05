@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        //body 까지 다 읽고 이 내용을 실행한다.
+        // javascript
+        window.onload = function() {
+            // alert("니취팔로마");
+            var adiv = document.getElementById("adiv");
+            console.log("javascript adiv \n" + adiv);
+            adiv.style.background = "green";
+            adiv.style.color = "cyan";
+
+            adiv.onclick = function() {
+                adiv.style.background = "orangered";
+            }
+               
+        }
+        
+        // jQuery
+        $(document).ready(function() {
+            // alert("니취팔로마");
+            var adiv = $("#adiv");
+            console.log("jquery adiv \n" + adiv);
+            adiv.css("background-color","blue");
+
+            $("#btn1").click(function(){
+                adiv.css("background", "gray");
+            })
+                
+        })
+    </script>
+</head>
+<body>
+    <div id = "adiv">
+        그레이색이야
+    </div>
+    <button id = "btn1">케시키</button>
+</body>
+</html>
