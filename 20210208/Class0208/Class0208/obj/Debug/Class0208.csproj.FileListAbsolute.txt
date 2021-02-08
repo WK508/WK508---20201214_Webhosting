@@ -1,0 +1,7 @@
+D:\WK508---20201214_Webhosting\20210208\Class0208\Class0208\bin\Debug\Class0208.exe.config
+D:\WK508---20201214_Webhosting\20210208\Class0208\Class0208\bin\Debug\Class0208.exe
+D:\WK508---20201214_Webhosting\20210208\Class0208\Class0208\bin\Debug\Class0208.pdb
+D:\WK508---20201214_Webhosting\20210208\Class0208\Class0208\obj\Debug\Class0208.csprojAssemblyReference.cache
+D:\WK508---20201214_Webhosting\20210208\Class0208\Class0208\obj\Debug\Class0208.csproj.CoreCompileInputs.cache
+D:\WK508---20201214_Webhosting\20210208\Class0208\Class0208\obj\Debug\Class0208.exe
+D:\WK508---20201214_Webhosting\20210208\Class0208\Class0208\obj\Debug\Class0208.pdb
