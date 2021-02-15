@@ -10,11 +10,28 @@ namespace Class0208
     {
         static void Main(string[] args)
         {
-            WS2006 w = new WS2006();
-            w.showWS2006Info();
+            //인스턴스 생성(= 객체 생성)
+            Car c = new Car();
+            c.Model = "그랜저";
+            c.Company = "현대";
+            c.Color = "검정";
+            c.Price = "4천만원";
+            c.showCarInfo();
 
-            WS2006 w2 = new WS2006("디트로이트 타이거스", 1894, "1935, 1945, 1968, 1984", "아메리칸리그 중부지구 1위");
-            w2.showWS2006Info();
+            // 한 번 쓰면 다시 쓸 수는 없음.
+            // new Car().showCarInfo();
+
+            Car c2 = new Car("현대", "녹색", "G80", "6천만원");
+            c2.showCarInfo();
+
+            // 입력 처리
+            Console.WriteLine("이름 입력 : ");
+            string name =  Console.ReadLine();
+            Console.WriteLine("이름 : " + name);
+
+            Console.Write("나이 입력 : ");
+            int age = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("나이 : " + age);
         }
     }
 }

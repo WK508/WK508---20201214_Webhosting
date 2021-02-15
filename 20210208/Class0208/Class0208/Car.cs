@@ -8,10 +8,10 @@ namespace Class0208
 {
     class Car
     {
-        // 클래스 상수 변수
+        // 클래스 상수 변수(클래스변수화)
         public const string DAERI = "동대구 영업소";
 
-        // 인스턴스 변수
+        // 인스턴스 변수(캡슐화)
         private string company;
         private string color;
         private string model;
@@ -20,21 +20,18 @@ namespace Class0208
         // 기본 생성자
         public Car()
         {
-            company = "기아";
-            color = "블랙";
-            model = "K7";
-            price = "4천만원";
-            
+              
         }
 
         // 일반 생성자(오버로딩)
         public Car(string company, string color, string model, string price)
         {
+            // this의 역할 : 다른 변수와의 충돌 방지, 객체의 시작 위치
             this.company = company;
             this.color = color;
             this.model = model;
             this.price = price;
-        }
+        } 
 
         public string Company
         {
@@ -42,23 +39,9 @@ namespace Class0208
             set { company = value; }
         }
 
-        public string Color
-        {
-            get { return color; }
-            set { color = value; }
-        }
-
-        public string Model
-        {
-            get { return model; }
-            set { model = value; }
-        }
-
-        public string Price
-        {
-            get { return price; }
-            set { price = value; }
-        }
+        public string Color { get => color; set => color = value; }
+        public string Model { get => model; set => model = value; }
+        public string Price { get => price; set => price = value; }
 
         public void showCarInfo()
         {
