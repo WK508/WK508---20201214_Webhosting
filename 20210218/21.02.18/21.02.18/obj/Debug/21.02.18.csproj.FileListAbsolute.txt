@@ -1,0 +1,7 @@
+D:\WK508---20201214_Webhosting\20210218\21.02.18\21.02.18\bin\Debug\21.02.18.exe.config
+D:\WK508---20201214_Webhosting\20210218\21.02.18\21.02.18\bin\Debug\21.02.18.exe
+D:\WK508---20201214_Webhosting\20210218\21.02.18\21.02.18\bin\Debug\21.02.18.pdb
+D:\WK508---20201214_Webhosting\20210218\21.02.18\21.02.18\obj\Debug\21.02.18.csprojAssemblyReference.cache
+D:\WK508---20201214_Webhosting\20210218\21.02.18\21.02.18\obj\Debug\21.02.18.csproj.CoreCompileInputs.cache
+D:\WK508---20201214_Webhosting\20210218\21.02.18\21.02.18\obj\Debug\21.02.18.exe
+D:\WK508---20201214_Webhosting\20210218\21.02.18\21.02.18\obj\Debug\21.02.18.pdb
