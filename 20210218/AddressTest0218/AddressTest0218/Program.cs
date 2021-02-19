@@ -18,9 +18,10 @@ namespace AddressTest0218
         static Student0218 stud;
         static List<Student0218> addrList =
             new List<Student0218>();
+
+        static Random r = new Random();
         static void Main(string[] args)
         {
-
             while (true)
             {
 
@@ -49,7 +50,8 @@ namespace AddressTest0218
 
                 }
             }
-        }
+        } 
+        
 
         public static void addItem()
         {
@@ -90,16 +92,18 @@ namespace AddressTest0218
             string[] name = { "홍길동", "김길동", "박길동", "이길동", "최길동", "전우치" };
             string[] tel = { "1111", "3333", "5555", "7777", "9999", "6666" };
             string[] address = { "서울", "대전", "대구", "부산", "인천", "울산" };
-            string[] email = { "야도란나시발챙이@", "조온마난색기@", "드라이식기@", "그레이색이야@", "씨벨롬@", "스바시바@" };
+            string[] email = { "야도란나시발챙이@", "조온마난색기@", "드라이식기@", "그레이색이야@", "시벨롬@", "스바시바@" };
 
-            Random r = new Random();
+            // Random r = new Random();
             for (int i = 0; i < 10; i++)
             {
                 addrList.Add(new Student0218(
+                    getId(),
                 name[r.Next(6)],
                 tel[r.Next(6)],
                 address[r.Next(6)],
                 email[r.Next(6)]));
+                // Thread.Sleep(50);
             }
         }
         public static int getMenu()
@@ -126,7 +130,7 @@ namespace AddressTest0218
             Console.Write("삭제할 이름 : ");
             string name = Console.ReadLine();
 
-            for (int i = 0; i <addrList.Count; i++)
+            for (int i = 0; i < addrList.Count; i++)
             {
                 if (name.Equals(addrList[i].Name))
                 {
@@ -140,7 +144,7 @@ namespace AddressTest0218
             {
                 if (name.Equals(addrList[i].Name))
                 {
-                    addrList.RemoveAt(i);
+                    addrList.RemoveAt(cnt);
                 }
                 else
                 {
@@ -154,7 +158,23 @@ namespace AddressTest0218
         {
             addrList.Clear();
         }
+
+        
+        static string getId()
+        {
+            // Random r = new Random();
+            string rdata =
+                "abcdefghhijklmnopqrstuvwxyz";
+            StringBuilder rs = new StringBuilder();
+            for (int i = 0; i < 3; i++)
+            {
+                rs.Append(rdata[(int)(r.NextDouble() * rdata.Length)]);
+            }
+            // Console.WriteLine("id : " + rs.ToString());
+            return rs.ToString();
+        }
     }
+}
 
     
-}
+

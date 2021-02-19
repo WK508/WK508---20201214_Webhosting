@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{C5A9D75E-95C3-4555-8951-19E9A292E6B8}</ProjectGuid>
+    <ProjectGuid>{82883B6B-8C38-41AA-A6A7-AFC009E58EB6}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>AddressTest0218</RootNamespace>
-    <AssemblyName>AddressTest0218</AssemblyName>
+    <RootNamespace>_20210219</RootNamespace>
+    <AssemblyName>20210219</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,14 +43,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Control\StudentHandler.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Model\Student0218.cs" />
+    <Compile Include="Team.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

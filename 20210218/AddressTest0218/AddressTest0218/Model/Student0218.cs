@@ -8,6 +8,7 @@ namespace AddressTest0218
 {
     class Student0218
     {
+        private string id;
         private string name;
         private string tel;
         private string address;
@@ -34,10 +35,16 @@ namespace AddressTest0218
             this.email = email;
         }
 
+        public Student0218(string id, string name, string tel, string address, string email) : this(name, tel, address, email)
+        {
+            this.id = id;
+        }
+
         public string Name { get => name; set => name = value; }
         public string Tel { get => tel; set => tel = value; }
         public string Address { get => address; set => address = value; }
         public string Email { get => email; set => email = value; }
+        public string Id { get => id; set => id = value; }
 
         /*public void showAddressInfo()
         {
