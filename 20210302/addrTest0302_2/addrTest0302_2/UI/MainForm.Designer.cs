@@ -182,7 +182,7 @@ namespace addrTest0302_2
             this.addrExit.TabIndex = 9;
             this.addrExit.Click += new System.EventHandler(this.addrExit_Click);
             // 
-            // Form1
+            // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -198,7 +198,8 @@ namespace addrTest0302_2
             this.Controls.Add(this.addrDel);
             this.Controls.Add(this.addrAdd);
             this.ForeColor = System.Drawing.Color.Transparent;
-            this.Name = "Form1";
+            this.Name = "MainForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.cxFlatPictureBox1)).EndInit();

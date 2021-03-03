@@ -21,7 +21,6 @@ namespace addrTest0302_2
         public MainForm()
         {
             InitializeComponent();
-           
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -42,32 +41,45 @@ namespace addrTest0302_2
         private void addrAdd_Click(object sender, EventArgs e)
         {
             // sc.addItem();
-            new AddForm(sc).ShowDialog();
+            new AddForm().ShowDialog();
         }
 
         private void addrView_Click(object sender, EventArgs e)
         {
-            sc.viewItem();
+            StudentCtrl.getInst().viewItem();
+            new ViewForm().ShowDialog();
         }
 
         private void addrAddRand_Click(object sender, EventArgs e)
         {
-            sc.randData(3);
+            string cnt = myinputBox("랜덤 데이터 생성", 
+             "랜덤하게 데이터를 생성할 갯수를 입력하세요",
+                       "0");
+            if (cnt == "") return;
+            StudentCtrl.getInst().randData(Convert.ToInt32(cnt));
         }
 
         private void addrDel_Click(object sender, EventArgs e)
         {
-            sc.delItem();
+            StudentCtrl.getInst().delItem("홍길동");
         }
 
         private void addrDelAll_Click(object sender, EventArgs e)
         {
-            sc.delItemAll();
+            StudentCtrl.getInst().delItemAll();
         }
 
         private void addrUpdate_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private string myinputBox(string title, string body, 
+                                  string prompt)
+        {
+            string input = Microsoft.VisualBasic.Interaction.InputBox(
+                            title, body, prompt, -1, -1);
+            return input;
         }
     }
 }

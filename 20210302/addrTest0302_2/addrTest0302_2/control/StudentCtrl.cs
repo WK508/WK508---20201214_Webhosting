@@ -15,6 +15,17 @@ namespace _20210223.Control
         // Random r;
         RandData rand;
 
+        static StudentCtrl inst;
+   
+        public static StudentCtrl getInst()
+        {
+            if (inst == null)
+            {
+                inst = new StudentCtrl();
+            }
+            return inst;
+        }
+
         public StudentCtrl()
         {
             // r = new Random();
@@ -45,9 +56,9 @@ namespace _20210223.Control
             Console.WriteLine("정보가 정상적으로 입력되었습니다.");
         }
 
-        internal string getId()
+        public string getId()
         {
-            throw new NotImplementedException();
+            return rand.getId();
         }
 
         public void viewItem()
@@ -62,11 +73,6 @@ namespace _20210223.Control
                 Console.WriteLine("이메일: " + addrList[i].Email);
                 Console.WriteLine("-------------------------");
             }
-        }
-
-        internal void delItem()
-        {
-            throw new NotImplementedException();
         }
 
         public void delItem(string name)

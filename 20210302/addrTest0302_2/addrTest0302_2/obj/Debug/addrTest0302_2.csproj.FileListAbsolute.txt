@@ -14,3 +14,4 @@ D:\WK508---20201214_Webhosting\20210302\addrTest0302_2\addrTest0302_2\obj\Debug\
 D:\WK508---20201214_Webhosting\20210302\addrTest0302_2\addrTest0302_2\obj\Debug\addrTest0302_2.MainForm.resources
 D:\WK508---20201214_Webhosting\20210302\addrTest0302_2\addrTest0302_2\obj\Debug\addrTest0302_2.csprojAssemblyReference.cache
 D:\WK508---20201214_Webhosting\20210302\addrTest0302_2\addrTest0302_2\obj\Debug\addrTest0302_2.UI.AddForm.resources
+D:\WK508---20201214_Webhosting\20210302\addrTest0302_2\addrTest0302_2\obj\Debug\addrTest0302_2.UI.ViewForm.resources

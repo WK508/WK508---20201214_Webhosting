@@ -194,7 +194,7 @@ namespace addrTest0302_2.UI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(849, 464);
             this.Controls.Add(this.addCancel);
             this.Controls.Add(this.addOk);
             this.Controls.Add(this.addEmail);

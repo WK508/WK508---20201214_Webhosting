@@ -1,0 +1,15 @@
+D:\WK508---20201214_Webhosting\20210303\addrTest20210303\addrTest20210303\bin\Debug\addrTest20210303.exe.config
+D:\WK508---20201214_Webhosting\20210303\addrTest20210303\addrTest20210303\bin\Debug\addrTest20210303.exe
+D:\WK508---20201214_Webhosting\20210303\addrTest20210303\addrTest20210303\bin\Debug\addrTest20210303.pdb
+D:\WK508---20201214_Webhosting\20210303\addrTest20210303\addrTest20210303\bin\Debug\CxFlatUI.dll
+D:\WK508---20201214_Webhosting\20210303\addrTest20210303\addrTest20210303\bin\Debug\MaterialSkin.dll
+D:\WK508---20201214_Webhosting\20210303\addrTest20210303\addrTest20210303\bin\Debug\SunnyUI.Common.dll
+D:\WK508---20201214_Webhosting\20210303\addrTest20210303\addrTest20210303\bin\Debug\SunnyUI.dll
+D:\WK508---20201214_Webhosting\20210303\addrTest20210303\addrTest20210303\obj\Debug\addrTest20210303.csprojAssemblyReference.cache
+D:\WK508---20201214_Webhosting\20210303\addrTest20210303\addrTest20210303\obj\Debug\addrTest20210303.Properties.Resources.resources
+D:\WK508---20201214_Webhosting\20210303\addrTest20210303\addrTest20210303\obj\Debug\addrTest20210303.csproj.GenerateResource.cache
+D:\WK508---20201214_Webhosting\20210303\addrTest20210303\addrTest20210303\obj\Debug\addrTest20210303.csproj.CoreCompileInputs.cache
+D:\WK508---20201214_Webhosting\20210303\addrTest20210303\addrTest20210303\obj\Debug\addrTest20210303.csproj.CopyComplete
+D:\WK508---20201214_Webhosting\20210303\addrTest20210303\addrTest20210303\obj\Debug\addrTest20210303.exe
+D:\WK508---20201214_Webhosting\20210303\addrTest20210303\addrTest20210303\obj\Debug\addrTest20210303.pdb
+D:\WK508---20201214_Webhosting\20210303\addrTest20210303\addrTest20210303\obj\Debug\addrTest20210303.UI.ViewForm.resources

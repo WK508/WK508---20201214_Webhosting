@@ -18,6 +18,11 @@ namespace addrTest0302_2.UI
     partial class AddForm : MaterialForm
     {
         StudentCtrl sc;
+
+        public AddForm()
+        {
+            InitializeComponent();
+        }
         public AddForm(StudentCtrl sc)
         {
             InitializeComponent();
@@ -47,9 +52,10 @@ namespace addrTest0302_2.UI
             }
 
             Random r = new Random();
-            sc.getList().Add(
-                new Student(new RandData(r).getId(),
+            StudentCtrl.getInst().getList().Add(
+                new Student(StudentCtrl.getInst().getId(),
                 addName.Text, addTel.Text, addAddress.Text, addEmail.Text));
+            MessageBox.Show("정상적으로 데이터가 입력되었습니다.");
             Close();
         }
 
