@@ -7,7 +7,7 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.Scanner;
 
-public class JDBCTEST_2 {
+public class PostSeason_Main {
 	
 	static Connection con;
 	static Statement state;
