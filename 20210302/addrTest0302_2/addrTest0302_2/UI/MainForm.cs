@@ -46,8 +46,8 @@ namespace addrTest0302_2
 
         private void addrView_Click(object sender, EventArgs e)
         {
-            StudentCtrl.getInst().viewItem();
-            new ViewForm().ShowDialog();
+            // sc.viewItem();
+            new ViewForm(sc).ShowDialog();
         }
 
         private void addrAddRand_Click(object sender, EventArgs e)
@@ -56,22 +56,23 @@ namespace addrTest0302_2
              "랜덤하게 데이터를 생성할 갯수를 입력하세요",
                        "0");
             if (cnt == "") return;
-            StudentCtrl.getInst().randData(Convert.ToInt32(cnt));
+            sc.randData(Convert.ToInt32(cnt));
         }
 
         private void addrDel_Click(object sender, EventArgs e)
         {
-            StudentCtrl.getInst().delItem("홍길동");
+            // sc.delItem("홍길동");
+            new DeleteForm().ShowDialog();
         }
 
         private void addrDelAll_Click(object sender, EventArgs e)
         {
-            StudentCtrl.getInst().delItemAll();
+            sc.delItemAll();
         }
 
         private void addrUpdate_Click(object sender, EventArgs e)
         {
-
+            new UpdateForm().ShowDialog();
         }
 
         private string myinputBox(string title, string body, 

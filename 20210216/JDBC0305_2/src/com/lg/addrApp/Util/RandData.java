@@ -5,7 +5,8 @@ import java.util.Random;
 import com.lg.addrApp.Model.PostSeason;
 
 public class RandData {
-     static String[] name = {"LA 다저스" ,"탬파베이 레이스" ,"애틀란타 브레이브스", "휴스턴 애스트로스"};
+     static String[] name = {"LA 다저스" ,"탬파베이 레이스" ,
+    		          "애틀란타 브레이브스", "휴스턴 애스트로스"};
      static String[] open = {"1884", "1998", "1871", "1962"};
      static String[] champion = {"1955, 1959, 1963, 1965, 1981, 1988, 2020", 
     		                    "없음", 

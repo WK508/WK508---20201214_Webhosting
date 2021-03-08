@@ -33,18 +33,18 @@ namespace addrTest0302_2.UI
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
             this.listView = new System.Windows.Forms.ListView();
-            this.GridView = new Sunny.UI.UIDataGridView();
-            this.viewExit = new Sunny.UI.UISymbolButton();
             this.list_count = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.list_name = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.list_tel = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.list_addr = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.list_email = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.GridView = new Sunny.UI.UIDataGridView();
             this.grid_count = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.grid_name = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.grid_tel = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.grid_addr = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.grid_email = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.viewExit = new Sunny.UI.UISymbolButton();
             ((System.ComponentModel.ISupportInitialize)(this.GridView)).BeginInit();
             this.SuspendLayout();
             // 
@@ -66,6 +66,34 @@ namespace addrTest0302_2.UI
             this.listView.UseCompatibleStateImageBehavior = false;
             this.listView.View = System.Windows.Forms.View.Details;
             this.listView.SelectedIndexChanged += new System.EventHandler(this.listView_SelectedIndexChanged);
+            // 
+            // list_count
+            // 
+            this.list_count.Text = "번호";
+            // 
+            // list_name
+            // 
+            this.list_name.Text = "이름";
+            this.list_name.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.list_name.Width = 80;
+            // 
+            // list_tel
+            // 
+            this.list_tel.Text = "전화번호";
+            this.list_tel.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.list_tel.Width = 120;
+            // 
+            // list_addr
+            // 
+            this.list_addr.Text = "주소";
+            this.list_addr.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.list_addr.Width = 180;
+            // 
+            // list_email
+            // 
+            this.list_email.Text = "이메일";
+            this.list_email.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.list_email.Width = 150;
             // 
             // GridView
             // 
@@ -102,51 +130,6 @@ namespace addrTest0302_2.UI
             this.GridView.Size = new System.Drawing.Size(795, 150);
             this.GridView.TabIndex = 1;
             // 
-            // viewExit
-            // 
-            this.viewExit.BackColor = System.Drawing.Color.Transparent;
-            this.viewExit.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.viewExit.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.viewExit.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-            this.viewExit.IsCircle = true;
-            this.viewExit.Location = new System.Drawing.Point(739, 78);
-            this.viewExit.MinimumSize = new System.Drawing.Size(1, 1);
-            this.viewExit.Name = "viewExit";
-            this.viewExit.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.viewExit.Size = new System.Drawing.Size(80, 63);
-            this.viewExit.Style = Sunny.UI.UIStyle.Custom;
-            this.viewExit.Symbol = 61457;
-            this.viewExit.TabIndex = 2;
-            this.viewExit.Click += new System.EventHandler(this.viewExit_Click);
-            // 
-            // list_count
-            // 
-            this.list_count.Text = "번호";
-            // 
-            // list_name
-            // 
-            this.list_name.Text = "이름";
-            this.list_name.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.list_name.Width = 80;
-            // 
-            // list_tel
-            // 
-            this.list_tel.Text = "전화번호";
-            this.list_tel.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.list_tel.Width = 120;
-            // 
-            // list_addr
-            // 
-            this.list_addr.Text = "주소";
-            this.list_addr.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.list_addr.Width = 180;
-            // 
-            // list_email
-            // 
-            this.list_email.Text = "이메일";
-            this.list_email.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.list_email.Width = 150;
-            // 
             // grid_count
             // 
             this.grid_count.HeaderText = "번호";
@@ -171,6 +154,23 @@ namespace addrTest0302_2.UI
             // 
             this.grid_email.HeaderText = "이메일";
             this.grid_email.Name = "grid_email";
+            // 
+            // viewExit
+            // 
+            this.viewExit.BackColor = System.Drawing.Color.Transparent;
+            this.viewExit.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.viewExit.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.viewExit.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
+            this.viewExit.IsCircle = true;
+            this.viewExit.Location = new System.Drawing.Point(739, 78);
+            this.viewExit.MinimumSize = new System.Drawing.Size(1, 1);
+            this.viewExit.Name = "viewExit";
+            this.viewExit.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.viewExit.Size = new System.Drawing.Size(80, 63);
+            this.viewExit.Style = Sunny.UI.UIStyle.Custom;
+            this.viewExit.Symbol = 61457;
+            this.viewExit.TabIndex = 2;
+            this.viewExit.Click += new System.EventHandler(this.viewExit_Click);
             // 
             // ViewForm
             // 

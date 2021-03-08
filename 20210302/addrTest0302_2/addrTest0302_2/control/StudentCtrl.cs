@@ -16,7 +16,12 @@ namespace _20210223.Control
         RandData rand;
 
         static StudentCtrl inst;
-   
+
+        public string Name { get; internal set; }
+        public string Tel { get; internal set; }
+        public string Address { get; internal set; }
+        public string Email { get; internal set; }
+
         public static StudentCtrl getInst()
         {
             if (inst == null)
