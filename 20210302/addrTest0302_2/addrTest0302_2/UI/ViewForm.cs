@@ -83,8 +83,8 @@ namespace addrTest0302_2.UI
 
         private void ViewForm_Load(object sender, EventArgs e)
         {
-            initListView();
-            initGridView();
+            showList();
+            showGridView();
         }
 
         private void initGridView()
@@ -112,7 +112,6 @@ namespace addrTest0302_2.UI
         }
 
         private void showGridView()
-
         {
             int cnt = sc.getList().Count;
             for (int i = 0; i < cnt; i++)
@@ -150,7 +149,7 @@ namespace addrTest0302_2.UI
 
         private void viewExit_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            Close();
         }
     }
 }

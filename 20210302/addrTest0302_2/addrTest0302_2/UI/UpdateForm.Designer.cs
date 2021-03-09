@@ -29,41 +29,41 @@ namespace addrTest0302_2.UI
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.listView1 = new System.Windows.Forms.ListView();
+            this.UpList = new System.Windows.Forms.ListView();
             this.list_count = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.list_name = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.list_tel = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.list_address = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.list_email = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.GridView1 = new Sunny.UI.UIDataGridView();
-            this.list_number = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.list_nm = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.list_phone = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.list_addr = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.list_mail = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.uiSymbolButton1 = new Sunny.UI.UISymbolButton();
-            ((System.ComponentModel.ISupportInitialize)(this.GridView1)).BeginInit();
+            this.UpCancel = new Sunny.UI.UISymbolButton();
+            this.UpOk = new Sunny.UI.UISymbolButton();
+            this.UpEmail = new Sunny.UI.UITextBox();
+            this.uiSymbolLabel4 = new Sunny.UI.UISymbolLabel();
+            this.UpAddress = new Sunny.UI.UITextBox();
+            this.uiSymbolLabel3 = new Sunny.UI.UISymbolLabel();
+            this.UpTel = new Sunny.UI.UITextBox();
+            this.uiSymbolLabel2 = new Sunny.UI.UISymbolLabel();
+            this.UpName = new Sunny.UI.UITextBox();
+            this.uiSymbolLabel5 = new Sunny.UI.UISymbolLabel();
             this.SuspendLayout();
             // 
-            // listView1
+            // UpList
             // 
-            this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.UpList.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.list_count,
             this.list_name,
             this.list_tel,
             this.list_address,
             this.list_email});
-            this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(47, 118);
-            this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(706, 164);
-            this.listView1.TabIndex = 0;
-            this.listView1.UseCompatibleStateImageBehavior = false;
-            this.listView1.View = System.Windows.Forms.View.Details;
-            this.listView1.SelectedIndexChanged += new System.EventHandler(this.listView1_SelectedIndexChanged);
+            this.UpList.FullRowSelect = true;
+            this.UpList.HideSelection = false;
+            this.UpList.Location = new System.Drawing.Point(40, 116);
+            this.UpList.Name = "UpList";
+            this.UpList.Size = new System.Drawing.Size(706, 164);
+            this.UpList.TabIndex = 1;
+            this.UpList.UseCompatibleStateImageBehavior = false;
+            this.UpList.View = System.Windows.Forms.View.Details;
+            this.UpList.SelectedIndexChanged += new System.EventHandler(this.UpList_SelectedIndexChanged);
             // 
             // list_count
             // 
@@ -88,114 +88,194 @@ namespace addrTest0302_2.UI
             this.list_email.Text = "이메일";
             this.list_email.Width = 150;
             // 
-            // GridView1
+            // UpCancel
             // 
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(243)))), ((int)(((byte)(255)))));
-            this.GridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.GridView1.BackgroundColor = System.Drawing.Color.White;
-            this.GridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(160)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.GridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.GridView1.ColumnHeadersHeight = 32;
-            this.GridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            this.GridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.list_number,
-            this.list_nm,
-            this.list_phone,
-            this.list_addr,
-            this.list_mail});
-            this.GridView1.EnableHeadersVisualStyles = false;
-            this.GridView1.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-            this.GridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(160)))), ((int)(((byte)(255)))));
-            this.GridView1.Location = new System.Drawing.Point(47, 288);
-            this.GridView1.Name = "GridView1";
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            this.GridView1.RowsDefaultCellStyle = dataGridViewCellStyle3;
-            this.GridView1.RowTemplate.Height = 29;
-            this.GridView1.SelectedIndex = -1;
-            this.GridView1.ShowGridLine = true;
-            this.GridView1.Size = new System.Drawing.Size(706, 140);
-            this.GridView1.TabIndex = 1;
+            this.UpCancel.BackColor = System.Drawing.Color.Transparent;
+            this.UpCancel.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.UpCancel.FillColor = System.Drawing.Color.Red;
+            this.UpCancel.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
+            this.UpCancel.IsCircle = true;
+            this.UpCancel.Location = new System.Drawing.Point(414, 541);
+            this.UpCancel.MinimumSize = new System.Drawing.Size(1, 1);
+            this.UpCancel.Name = "UpCancel";
+            this.UpCancel.RectColor = System.Drawing.Color.Red;
+            this.UpCancel.Size = new System.Drawing.Size(50, 50);
+            this.UpCancel.Style = Sunny.UI.UIStyle.Custom;
+            this.UpCancel.Symbol = 61453;
+            this.UpCancel.TabIndex = 19;
             // 
-            // list_number
+            // UpOk
             // 
-            this.list_number.HeaderText = "번호";
-            this.list_number.Name = "list_number";
+            this.UpOk.BackColor = System.Drawing.Color.Transparent;
+            this.UpOk.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.UpOk.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.UpOk.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
+            this.UpOk.IsCircle = true;
+            this.UpOk.Location = new System.Drawing.Point(259, 541);
+            this.UpOk.MinimumSize = new System.Drawing.Size(1, 1);
+            this.UpOk.Name = "UpOk";
+            this.UpOk.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.UpOk.Size = new System.Drawing.Size(50, 50);
+            this.UpOk.Style = Sunny.UI.UIStyle.Custom;
+            this.UpOk.TabIndex = 18;
             // 
-            // list_nm
+            // UpEmail
             // 
-            this.list_nm.HeaderText = "이름";
-            this.list_nm.Name = "list_nm";
+            this.UpEmail.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.UpEmail.FillColor = System.Drawing.Color.White;
+            this.UpEmail.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
+            this.UpEmail.Location = new System.Drawing.Point(363, 479);
+            this.UpEmail.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.UpEmail.Maximum = 2147483647D;
+            this.UpEmail.Minimum = -2147483648D;
+            this.UpEmail.MinimumSize = new System.Drawing.Size(1, 1);
+            this.UpEmail.Name = "UpEmail";
+            this.UpEmail.Padding = new System.Windows.Forms.Padding(5);
+            this.UpEmail.Size = new System.Drawing.Size(183, 29);
+            this.UpEmail.TabIndex = 17;
             // 
-            // list_phone
+            // uiSymbolLabel4
             // 
-            this.list_phone.HeaderText = "전화번호";
-            this.list_phone.Name = "list_phone";
-            this.list_phone.Width = 150;
+            this.uiSymbolLabel4.BackColor = System.Drawing.Color.Transparent;
+            this.uiSymbolLabel4.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
+            this.uiSymbolLabel4.Location = new System.Drawing.Point(220, 479);
+            this.uiSymbolLabel4.MinimumSize = new System.Drawing.Size(1, 1);
+            this.uiSymbolLabel4.Name = "uiSymbolLabel4";
+            this.uiSymbolLabel4.Padding = new System.Windows.Forms.Padding(28, 0, 0, 0);
+            this.uiSymbolLabel4.Size = new System.Drawing.Size(89, 35);
+            this.uiSymbolLabel4.Symbol = 61946;
+            this.uiSymbolLabel4.SymbolColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.uiSymbolLabel4.TabIndex = 16;
+            this.uiSymbolLabel4.Text = "메일";
             // 
-            // list_addr
+            // UpAddress
             // 
-            this.list_addr.HeaderText = "주소";
-            this.list_addr.Name = "list_addr";
-            this.list_addr.Width = 150;
+            this.UpAddress.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.UpAddress.FillColor = System.Drawing.Color.White;
+            this.UpAddress.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
+            this.UpAddress.Location = new System.Drawing.Point(363, 422);
+            this.UpAddress.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.UpAddress.Maximum = 2147483647D;
+            this.UpAddress.Minimum = -2147483648D;
+            this.UpAddress.MinimumSize = new System.Drawing.Size(1, 1);
+            this.UpAddress.Name = "UpAddress";
+            this.UpAddress.Padding = new System.Windows.Forms.Padding(5);
+            this.UpAddress.Size = new System.Drawing.Size(183, 29);
+            this.UpAddress.TabIndex = 15;
             // 
-            // list_mail
+            // uiSymbolLabel3
             // 
-            this.list_mail.HeaderText = "이메일";
-            this.list_mail.Name = "list_mail";
-            this.list_mail.Width = 150;
+            this.uiSymbolLabel3.BackColor = System.Drawing.Color.Transparent;
+            this.uiSymbolLabel3.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
+            this.uiSymbolLabel3.Location = new System.Drawing.Point(220, 422);
+            this.uiSymbolLabel3.MinimumSize = new System.Drawing.Size(1, 1);
+            this.uiSymbolLabel3.Name = "uiSymbolLabel3";
+            this.uiSymbolLabel3.Padding = new System.Windows.Forms.Padding(28, 0, 0, 0);
+            this.uiSymbolLabel3.Size = new System.Drawing.Size(89, 35);
+            this.uiSymbolLabel3.Symbol = 57571;
+            this.uiSymbolLabel3.SymbolColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.uiSymbolLabel3.TabIndex = 14;
+            this.uiSymbolLabel3.Text = "주소";
             // 
-            // uiSymbolButton1
+            // UpTel
             // 
-            this.uiSymbolButton1.BackColor = System.Drawing.Color.Transparent;
-            this.uiSymbolButton1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.uiSymbolButton1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.uiSymbolButton1.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-            this.uiSymbolButton1.IsCircle = true;
-            this.uiSymbolButton1.Location = new System.Drawing.Point(700, 77);
-            this.uiSymbolButton1.MinimumSize = new System.Drawing.Size(1, 1);
-            this.uiSymbolButton1.Name = "uiSymbolButton1";
-            this.uiSymbolButton1.Size = new System.Drawing.Size(53, 35);
-            this.uiSymbolButton1.Style = Sunny.UI.UIStyle.Custom;
-            this.uiSymbolButton1.Symbol = 61694;
-            this.uiSymbolButton1.TabIndex = 2;
-            this.uiSymbolButton1.Click += new System.EventHandler(this.uiSymbolButton1_Click);
+            this.UpTel.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.UpTel.FillColor = System.Drawing.Color.White;
+            this.UpTel.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
+            this.UpTel.Location = new System.Drawing.Point(363, 368);
+            this.UpTel.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.UpTel.Maximum = 2147483647D;
+            this.UpTel.Minimum = -2147483648D;
+            this.UpTel.MinimumSize = new System.Drawing.Size(1, 1);
+            this.UpTel.Name = "UpTel";
+            this.UpTel.Padding = new System.Windows.Forms.Padding(5);
+            this.UpTel.Size = new System.Drawing.Size(183, 29);
+            this.UpTel.TabIndex = 13;
+            // 
+            // uiSymbolLabel2
+            // 
+            this.uiSymbolLabel2.BackColor = System.Drawing.Color.Transparent;
+            this.uiSymbolLabel2.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
+            this.uiSymbolLabel2.Location = new System.Drawing.Point(220, 368);
+            this.uiSymbolLabel2.MinimumSize = new System.Drawing.Size(1, 1);
+            this.uiSymbolLabel2.Name = "uiSymbolLabel2";
+            this.uiSymbolLabel2.Padding = new System.Windows.Forms.Padding(28, 0, 0, 0);
+            this.uiSymbolLabel2.Size = new System.Drawing.Size(89, 35);
+            this.uiSymbolLabel2.Symbol = 57488;
+            this.uiSymbolLabel2.SymbolColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.uiSymbolLabel2.TabIndex = 12;
+            this.uiSymbolLabel2.Text = "전화";
+            // 
+            // UpName
+            // 
+            this.UpName.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.UpName.FillColor = System.Drawing.Color.White;
+            this.UpName.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
+            this.UpName.Location = new System.Drawing.Point(363, 313);
+            this.UpName.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.UpName.Maximum = 2147483647D;
+            this.UpName.Minimum = -2147483648D;
+            this.UpName.MinimumSize = new System.Drawing.Size(1, 1);
+            this.UpName.Name = "UpName";
+            this.UpName.Padding = new System.Windows.Forms.Padding(5);
+            this.UpName.Size = new System.Drawing.Size(183, 29);
+            this.UpName.TabIndex = 11;
+            // 
+            // uiSymbolLabel5
+            // 
+            this.uiSymbolLabel5.BackColor = System.Drawing.Color.Transparent;
+            this.uiSymbolLabel5.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
+            this.uiSymbolLabel5.Location = new System.Drawing.Point(220, 313);
+            this.uiSymbolLabel5.MinimumSize = new System.Drawing.Size(1, 1);
+            this.uiSymbolLabel5.Name = "uiSymbolLabel5";
+            this.uiSymbolLabel5.Padding = new System.Windows.Forms.Padding(28, 0, 0, 0);
+            this.uiSymbolLabel5.Size = new System.Drawing.Size(89, 35);
+            this.uiSymbolLabel5.Symbol = 62144;
+            this.uiSymbolLabel5.SymbolColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.uiSymbolLabel5.TabIndex = 10;
+            this.uiSymbolLabel5.Text = "이름";
             // 
             // UpdateForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.uiSymbolButton1);
-            this.Controls.Add(this.GridView1);
-            this.Controls.Add(this.listView1);
+            this.ClientSize = new System.Drawing.Size(800, 643);
+            this.Controls.Add(this.UpCancel);
+            this.Controls.Add(this.UpOk);
+            this.Controls.Add(this.UpEmail);
+            this.Controls.Add(this.uiSymbolLabel4);
+            this.Controls.Add(this.UpAddress);
+            this.Controls.Add(this.uiSymbolLabel3);
+            this.Controls.Add(this.UpTel);
+            this.Controls.Add(this.uiSymbolLabel2);
+            this.Controls.Add(this.UpName);
+            this.Controls.Add(this.uiSymbolLabel5);
+            this.Controls.Add(this.UpList);
             this.Name = "UpdateForm";
-            this.Text = "주소록 데이터 수정, 삭제";
-            ((System.ComponentModel.ISupportInitialize)(this.GridView1)).EndInit();
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+            this.Text = "UpdateForm";
+            this.Load += new System.EventHandler(this.UpdateForm_Load);
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.ListView listView1;
-        private Sunny.UI.UIDataGridView GridView1;
+        private System.Windows.Forms.ListView UpList;
         private System.Windows.Forms.ColumnHeader list_count;
         private System.Windows.Forms.ColumnHeader list_name;
         private System.Windows.Forms.ColumnHeader list_tel;
         private System.Windows.Forms.ColumnHeader list_address;
         private System.Windows.Forms.ColumnHeader list_email;
-        private System.Windows.Forms.DataGridViewTextBoxColumn list_number;
-        private System.Windows.Forms.DataGridViewTextBoxColumn list_nm;
-        private System.Windows.Forms.DataGridViewTextBoxColumn list_phone;
-        private System.Windows.Forms.DataGridViewTextBoxColumn list_addr;
-        private System.Windows.Forms.DataGridViewTextBoxColumn list_mail;
-        private Sunny.UI.UISymbolButton uiSymbolButton1;
+        private Sunny.UI.UISymbolButton UpCancel;
+        private Sunny.UI.UISymbolButton UpOk;
+        private Sunny.UI.UITextBox UpEmail;
+        private Sunny.UI.UISymbolLabel uiSymbolLabel4;
+        private Sunny.UI.UITextBox UpAddress;
+        private Sunny.UI.UISymbolLabel uiSymbolLabel3;
+        private Sunny.UI.UITextBox UpTel;
+        private Sunny.UI.UISymbolLabel uiSymbolLabel2;
+        private Sunny.UI.UITextBox UpName;
+        private Sunny.UI.UISymbolLabel uiSymbolLabel5;
     }
 }

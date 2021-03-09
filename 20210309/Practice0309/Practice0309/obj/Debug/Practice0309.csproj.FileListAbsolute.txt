@@ -1,0 +1,7 @@
+D:\WK508---20201214_Webhosting\20210309\Practice0309\Practice0309\bin\Debug\Practice0309.exe.config
+D:\WK508---20201214_Webhosting\20210309\Practice0309\Practice0309\bin\Debug\Practice0309.exe
+D:\WK508---20201214_Webhosting\20210309\Practice0309\Practice0309\bin\Debug\Practice0309.pdb
+D:\WK508---20201214_Webhosting\20210309\Practice0309\Practice0309\obj\Debug\Practice0309.csprojAssemblyReference.cache
+D:\WK508---20201214_Webhosting\20210309\Practice0309\Practice0309\obj\Debug\Practice0309.csproj.CoreCompileInputs.cache
+D:\WK508---20201214_Webhosting\20210309\Practice0309\Practice0309\obj\Debug\Practice0309.exe
+D:\WK508---20201214_Webhosting\20210309\Practice0309\Practice0309\obj\Debug\Practice0309.pdb

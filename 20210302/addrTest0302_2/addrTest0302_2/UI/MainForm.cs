@@ -46,7 +46,7 @@ namespace addrTest0302_2
 
         private void addrView_Click(object sender, EventArgs e)
         {
-            // sc.viewItem();
+            sc.viewItem();
             new ViewForm(sc).ShowDialog();
         }
 
@@ -62,7 +62,7 @@ namespace addrTest0302_2
         private void addrDel_Click(object sender, EventArgs e)
         {
             // sc.delItem("홍길동");
-            new DeleteForm().ShowDialog();
+            new DeleteForm(sc).ShowDialog();
         }
 
         private void addrDelAll_Click(object sender, EventArgs e)
@@ -72,7 +72,7 @@ namespace addrTest0302_2
 
         private void addrUpdate_Click(object sender, EventArgs e)
         {
-            new UpdateForm().ShowDialog();
+            new UpdateForm(sc).ShowDialog();
         }
 
         private string myinputBox(string title, string body, 

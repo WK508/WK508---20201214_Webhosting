@@ -29,75 +29,188 @@ namespace addrTest0302_2.UI
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.listView1 = new System.Windows.Forms.ListView();
-            this.GridView1 = new Sunny.UI.UIDataGridView();
+            this.DelCancel = new Sunny.UI.UISymbolButton();
+            this.DelOk = new Sunny.UI.UISymbolButton();
+            this.DelEmail = new Sunny.UI.UITextBox();
+            this.uiSymbolLabel4 = new Sunny.UI.UISymbolLabel();
+            this.DelAddress = new Sunny.UI.UITextBox();
+            this.uiSymbolLabel3 = new Sunny.UI.UISymbolLabel();
+            this.DelTel = new Sunny.UI.UITextBox();
+            this.uiSymbolLabel2 = new Sunny.UI.UISymbolLabel();
+            this.DelName = new Sunny.UI.UITextBox();
+            this.uiSymbolLabel5 = new Sunny.UI.UISymbolLabel();
+            this.DelList = new System.Windows.Forms.ListView();
             this.list_count = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.list_name = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.list_tel = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.list_address = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.list_email = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.list_number = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.list_nm = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.list_phone = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.list_addr = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.list_mail = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.uiSymbolButton1 = new Sunny.UI.UISymbolButton();
-            ((System.ComponentModel.ISupportInitialize)(this.GridView1)).BeginInit();
             this.SuspendLayout();
             // 
-            // listView1
+            // DelCancel
             // 
-            this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.DelCancel.BackColor = System.Drawing.Color.Transparent;
+            this.DelCancel.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.DelCancel.FillColor = System.Drawing.Color.Red;
+            this.DelCancel.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
+            this.DelCancel.IsCircle = true;
+            this.DelCancel.Location = new System.Drawing.Point(418, 509);
+            this.DelCancel.MinimumSize = new System.Drawing.Size(1, 1);
+            this.DelCancel.Name = "DelCancel";
+            this.DelCancel.RectColor = System.Drawing.Color.Red;
+            this.DelCancel.Size = new System.Drawing.Size(50, 50);
+            this.DelCancel.Style = Sunny.UI.UIStyle.Custom;
+            this.DelCancel.Symbol = 61453;
+            this.DelCancel.TabIndex = 30;
+            // 
+            // DelOk
+            // 
+            this.DelOk.BackColor = System.Drawing.Color.Transparent;
+            this.DelOk.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.DelOk.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.DelOk.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
+            this.DelOk.IsCircle = true;
+            this.DelOk.Location = new System.Drawing.Point(263, 509);
+            this.DelOk.MinimumSize = new System.Drawing.Size(1, 1);
+            this.DelOk.Name = "DelOk";
+            this.DelOk.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.DelOk.Size = new System.Drawing.Size(50, 50);
+            this.DelOk.Style = Sunny.UI.UIStyle.Custom;
+            this.DelOk.TabIndex = 29;
+            // 
+            // DelEmail
+            // 
+            this.DelEmail.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.DelEmail.FillColor = System.Drawing.Color.White;
+            this.DelEmail.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
+            this.DelEmail.Location = new System.Drawing.Point(367, 447);
+            this.DelEmail.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.DelEmail.Maximum = 2147483647D;
+            this.DelEmail.Minimum = -2147483648D;
+            this.DelEmail.MinimumSize = new System.Drawing.Size(1, 1);
+            this.DelEmail.Name = "DelEmail";
+            this.DelEmail.Padding = new System.Windows.Forms.Padding(5);
+            this.DelEmail.Size = new System.Drawing.Size(183, 29);
+            this.DelEmail.TabIndex = 28;
+            // 
+            // uiSymbolLabel4
+            // 
+            this.uiSymbolLabel4.BackColor = System.Drawing.Color.Transparent;
+            this.uiSymbolLabel4.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
+            this.uiSymbolLabel4.Location = new System.Drawing.Point(224, 447);
+            this.uiSymbolLabel4.MinimumSize = new System.Drawing.Size(1, 1);
+            this.uiSymbolLabel4.Name = "uiSymbolLabel4";
+            this.uiSymbolLabel4.Padding = new System.Windows.Forms.Padding(28, 0, 0, 0);
+            this.uiSymbolLabel4.Size = new System.Drawing.Size(89, 35);
+            this.uiSymbolLabel4.Symbol = 61946;
+            this.uiSymbolLabel4.SymbolColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.uiSymbolLabel4.TabIndex = 27;
+            this.uiSymbolLabel4.Text = "메일";
+            // 
+            // DelAddress
+            // 
+            this.DelAddress.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.DelAddress.FillColor = System.Drawing.Color.White;
+            this.DelAddress.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
+            this.DelAddress.Location = new System.Drawing.Point(367, 390);
+            this.DelAddress.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.DelAddress.Maximum = 2147483647D;
+            this.DelAddress.Minimum = -2147483648D;
+            this.DelAddress.MinimumSize = new System.Drawing.Size(1, 1);
+            this.DelAddress.Name = "DelAddress";
+            this.DelAddress.Padding = new System.Windows.Forms.Padding(5);
+            this.DelAddress.Size = new System.Drawing.Size(183, 29);
+            this.DelAddress.TabIndex = 26;
+            // 
+            // uiSymbolLabel3
+            // 
+            this.uiSymbolLabel3.BackColor = System.Drawing.Color.Transparent;
+            this.uiSymbolLabel3.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
+            this.uiSymbolLabel3.Location = new System.Drawing.Point(224, 390);
+            this.uiSymbolLabel3.MinimumSize = new System.Drawing.Size(1, 1);
+            this.uiSymbolLabel3.Name = "uiSymbolLabel3";
+            this.uiSymbolLabel3.Padding = new System.Windows.Forms.Padding(28, 0, 0, 0);
+            this.uiSymbolLabel3.Size = new System.Drawing.Size(89, 35);
+            this.uiSymbolLabel3.Symbol = 57571;
+            this.uiSymbolLabel3.SymbolColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.uiSymbolLabel3.TabIndex = 25;
+            this.uiSymbolLabel3.Text = "주소";
+            // 
+            // DelTel
+            // 
+            this.DelTel.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.DelTel.FillColor = System.Drawing.Color.White;
+            this.DelTel.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
+            this.DelTel.Location = new System.Drawing.Point(367, 336);
+            this.DelTel.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.DelTel.Maximum = 2147483647D;
+            this.DelTel.Minimum = -2147483648D;
+            this.DelTel.MinimumSize = new System.Drawing.Size(1, 1);
+            this.DelTel.Name = "DelTel";
+            this.DelTel.Padding = new System.Windows.Forms.Padding(5);
+            this.DelTel.Size = new System.Drawing.Size(183, 29);
+            this.DelTel.TabIndex = 24;
+            // 
+            // uiSymbolLabel2
+            // 
+            this.uiSymbolLabel2.BackColor = System.Drawing.Color.Transparent;
+            this.uiSymbolLabel2.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
+            this.uiSymbolLabel2.Location = new System.Drawing.Point(224, 336);
+            this.uiSymbolLabel2.MinimumSize = new System.Drawing.Size(1, 1);
+            this.uiSymbolLabel2.Name = "uiSymbolLabel2";
+            this.uiSymbolLabel2.Padding = new System.Windows.Forms.Padding(28, 0, 0, 0);
+            this.uiSymbolLabel2.Size = new System.Drawing.Size(89, 35);
+            this.uiSymbolLabel2.Symbol = 57488;
+            this.uiSymbolLabel2.SymbolColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.uiSymbolLabel2.TabIndex = 23;
+            this.uiSymbolLabel2.Text = "전화";
+            // 
+            // DelName
+            // 
+            this.DelName.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.DelName.FillColor = System.Drawing.Color.White;
+            this.DelName.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
+            this.DelName.Location = new System.Drawing.Point(367, 281);
+            this.DelName.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.DelName.Maximum = 2147483647D;
+            this.DelName.Minimum = -2147483648D;
+            this.DelName.MinimumSize = new System.Drawing.Size(1, 1);
+            this.DelName.Name = "DelName";
+            this.DelName.Padding = new System.Windows.Forms.Padding(5);
+            this.DelName.Size = new System.Drawing.Size(183, 29);
+            this.DelName.TabIndex = 22;
+            // 
+            // uiSymbolLabel5
+            // 
+            this.uiSymbolLabel5.BackColor = System.Drawing.Color.Transparent;
+            this.uiSymbolLabel5.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
+            this.uiSymbolLabel5.Location = new System.Drawing.Point(224, 281);
+            this.uiSymbolLabel5.MinimumSize = new System.Drawing.Size(1, 1);
+            this.uiSymbolLabel5.Name = "uiSymbolLabel5";
+            this.uiSymbolLabel5.Padding = new System.Windows.Forms.Padding(28, 0, 0, 0);
+            this.uiSymbolLabel5.Size = new System.Drawing.Size(89, 35);
+            this.uiSymbolLabel5.Symbol = 62144;
+            this.uiSymbolLabel5.SymbolColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.uiSymbolLabel5.TabIndex = 21;
+            this.uiSymbolLabel5.Text = "이름";
+            // 
+            // DelList
+            // 
+            this.DelList.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.list_count,
             this.list_name,
             this.list_tel,
             this.list_address,
             this.list_email});
-            this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(28, 117);
-            this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(743, 171);
-            this.listView1.TabIndex = 0;
-            this.listView1.UseCompatibleStateImageBehavior = false;
-            this.listView1.View = System.Windows.Forms.View.Details;
-            // 
-            // GridView1
-            // 
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(243)))), ((int)(((byte)(255)))));
-            this.GridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
-            this.GridView1.BackgroundColor = System.Drawing.Color.White;
-            this.GridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(160)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.GridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
-            this.GridView1.ColumnHeadersHeight = 32;
-            this.GridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            this.GridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.list_number,
-            this.list_nm,
-            this.list_phone,
-            this.list_addr,
-            this.list_mail});
-            this.GridView1.EnableHeadersVisualStyles = false;
-            this.GridView1.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-            this.GridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(160)))), ((int)(((byte)(255)))));
-            this.GridView1.Location = new System.Drawing.Point(28, 304);
-            this.GridView1.Name = "GridView1";
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
-            this.GridView1.RowsDefaultCellStyle = dataGridViewCellStyle6;
-            this.GridView1.RowTemplate.Height = 29;
-            this.GridView1.SelectedIndex = -1;
-            this.GridView1.ShowGridLine = true;
-            this.GridView1.Size = new System.Drawing.Size(743, 120);
-            this.GridView1.TabIndex = 1;
+            this.DelList.FullRowSelect = true;
+            this.DelList.HideSelection = false;
+            this.DelList.Location = new System.Drawing.Point(37, 98);
+            this.DelList.Name = "DelList";
+            this.DelList.Size = new System.Drawing.Size(706, 164);
+            this.DelList.TabIndex = 20;
+            this.DelList.UseCompatibleStateImageBehavior = false;
+            this.DelList.View = System.Windows.Forms.View.Details;
+            this.DelList.SelectedIndexChanged += new System.EventHandler(this.DelList_SelectedIndexChanged);
             // 
             // list_count
             // 
@@ -110,7 +223,7 @@ namespace addrTest0302_2.UI
             // list_tel
             // 
             this.list_tel.Text = "전화번호";
-            this.list_tel.Width = 120;
+            this.list_tel.Width = 150;
             // 
             // list_address
             // 
@@ -122,79 +235,47 @@ namespace addrTest0302_2.UI
             this.list_email.Text = "이메일";
             this.list_email.Width = 150;
             // 
-            // list_number
-            // 
-            this.list_number.HeaderText = "번호";
-            this.list_number.Name = "list_number";
-            // 
-            // list_nm
-            // 
-            this.list_nm.HeaderText = "이름";
-            this.list_nm.Name = "list_nm";
-            // 
-            // list_phone
-            // 
-            this.list_phone.HeaderText = "전화번호";
-            this.list_phone.Name = "list_phone";
-            this.list_phone.Width = 150;
-            // 
-            // list_addr
-            // 
-            this.list_addr.HeaderText = "주소";
-            this.list_addr.Name = "list_addr";
-            this.list_addr.Width = 150;
-            // 
-            // list_mail
-            // 
-            this.list_mail.HeaderText = "이메일";
-            this.list_mail.Name = "list_mail";
-            this.list_mail.Width = 150;
-            // 
-            // uiSymbolButton1
-            // 
-            this.uiSymbolButton1.BackColor = System.Drawing.Color.Transparent;
-            this.uiSymbolButton1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.uiSymbolButton1.FillColor = System.Drawing.Color.Red;
-            this.uiSymbolButton1.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-            this.uiSymbolButton1.IsCircle = true;
-            this.uiSymbolButton1.Location = new System.Drawing.Point(726, 76);
-            this.uiSymbolButton1.MinimumSize = new System.Drawing.Size(1, 1);
-            this.uiSymbolButton1.Name = "uiSymbolButton1";
-            this.uiSymbolButton1.Size = new System.Drawing.Size(45, 35);
-            this.uiSymbolButton1.Style = Sunny.UI.UIStyle.Custom;
-            this.uiSymbolButton1.Symbol = 61526;
-            this.uiSymbolButton1.TabIndex = 2;
-            this.uiSymbolButton1.Click += new System.EventHandler(this.uiSymbolButton1_Click);
-            // 
             // DeleteForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.uiSymbolButton1);
-            this.Controls.Add(this.GridView1);
-            this.Controls.Add(this.listView1);
+            this.ClientSize = new System.Drawing.Size(800, 601);
+            this.Controls.Add(this.DelCancel);
+            this.Controls.Add(this.DelOk);
+            this.Controls.Add(this.DelEmail);
+            this.Controls.Add(this.uiSymbolLabel4);
+            this.Controls.Add(this.DelAddress);
+            this.Controls.Add(this.uiSymbolLabel3);
+            this.Controls.Add(this.DelTel);
+            this.Controls.Add(this.uiSymbolLabel2);
+            this.Controls.Add(this.DelName);
+            this.Controls.Add(this.uiSymbolLabel5);
+            this.Controls.Add(this.DelList);
             this.Name = "DeleteForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "DeleteForm";
-            ((System.ComponentModel.ISupportInitialize)(this.GridView1)).EndInit();
+            this.Load += new System.EventHandler(this.DeleteForm_Load);
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.ListView listView1;
-        private Sunny.UI.UIDataGridView GridView1;
+        private Sunny.UI.UISymbolButton DelCancel;
+        private Sunny.UI.UISymbolButton DelOk;
+        private Sunny.UI.UITextBox DelEmail;
+        private Sunny.UI.UISymbolLabel uiSymbolLabel4;
+        private Sunny.UI.UITextBox DelAddress;
+        private Sunny.UI.UISymbolLabel uiSymbolLabel3;
+        private Sunny.UI.UITextBox DelTel;
+        private Sunny.UI.UISymbolLabel uiSymbolLabel2;
+        private Sunny.UI.UITextBox DelName;
+        private Sunny.UI.UISymbolLabel uiSymbolLabel5;
+        private System.Windows.Forms.ListView DelList;
         private System.Windows.Forms.ColumnHeader list_count;
         private System.Windows.Forms.ColumnHeader list_name;
         private System.Windows.Forms.ColumnHeader list_tel;
         private System.Windows.Forms.ColumnHeader list_address;
         private System.Windows.Forms.ColumnHeader list_email;
-        private System.Windows.Forms.DataGridViewTextBoxColumn list_number;
-        private System.Windows.Forms.DataGridViewTextBoxColumn list_nm;
-        private System.Windows.Forms.DataGridViewTextBoxColumn list_phone;
-        private System.Windows.Forms.DataGridViewTextBoxColumn list_addr;
-        private System.Windows.Forms.DataGridViewTextBoxColumn list_mail;
-        private Sunny.UI.UISymbolButton uiSymbolButton1;
     }
 }

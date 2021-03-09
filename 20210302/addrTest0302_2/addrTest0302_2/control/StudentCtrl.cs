@@ -31,6 +31,11 @@ namespace _20210223.Control
             return inst;
         }
 
+        internal object DelList()
+        {
+            throw new NotImplementedException();
+        }
+
         public StudentCtrl()
         {
             // r = new Random();
