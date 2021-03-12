@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;Directive0312_2/WebContent/import.jsp&apos; to &apos;import_2.jsp&apos;" description="Rename resource &apos;import.jsp&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="WebContent/import.jsp" name="import_2.jsp" stamp="1615525276368" updateReferences="true"/>
+</session>

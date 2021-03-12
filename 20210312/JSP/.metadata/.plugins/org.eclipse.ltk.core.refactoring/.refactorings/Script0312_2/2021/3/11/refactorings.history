@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;Script0312_2/WebContent/Script3_3.jsp&apos; to &apos;Script3_2.jsp&apos;" description="Rename resource &apos;Script3_3.jsp&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="WebContent/Script3_3.jsp" name="Script3_2.jsp" stamp="1615532420020" updateReferences="true"/>
+</session>

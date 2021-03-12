@@ -38,12 +38,15 @@ public class PostSeason_Main {
 				break;
 				
 			case Menu.VIEW_DATA:
+				db.showDB();
 				break;
 				
 			case Menu.UPDATE_DATA:
+				db.updateDB("필라델피아 필리스", "LA 다저스");
 				break;
 				
 			case Menu.DELETE_DATA:
+				db.deleteDB("필라델피아 필리스");
 				break;
 				
 			case Menu.MAIN_EXIT:
